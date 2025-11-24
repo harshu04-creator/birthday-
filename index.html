@@ -711,7 +711,21 @@
             margin: 25px 0;
             font-weight: 300;
         }
-
+.floating-watermark {
+    position: fixed;      /* Keeps it stuck to the screen */
+    bottom: 15px;         /* Distance from bottom */
+    right: 15px;          /* Distance from right */
+    
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    color: white;         /* White text */
+    padding: 8px 15px;    /* Spacing inside the box */
+    border-radius: 20px;  /* Rounded corners */
+    
+    font-size: 11px;
+    font-family: sans-serif;
+    z-index: 9999;        /* Ensures it sits on top of everything */
+    backdrop-filter: blur(4px); /* Optional: Blurs the background behind it */
+            }
         .sparkle {
             position: fixed;
             width: 6px;
@@ -1032,7 +1046,14 @@
             <p style="font-size: 20px; color: #764ba2; margin-top: 30px;">
                 With all my love and best wishes! 🌈
             </p>
-        </div>
+            <!-- WATERMARK START -->
+<div class="floating-watermark">
+    Made by @ufffharshuuu....
+</div>
+<!-- WATERMARK END -->
+
+        </body>
+                  </div> 
     </div>
 
 
